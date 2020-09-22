@@ -1,0 +1,64 @@
+<!--pages/home/pages/home.wxml-->
+<view class="home">
+  <view class="swiper-box">
+    <swiper class="swiper" autoplay indicator-dots indicator-active-color='#D32F2F'>
+      <swiper-item wx:for="{{swiper}}" wx:key='index'>
+        <image src='{{item}}' mode="widthFix" class="img"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="menus">
+      <view class="menu" wx:for="{{menus}}" wx:key='index'>
+        <image src='{{item.icon}}' mode="widthFix" class="img"></image>
+        <text class="title">{{item.title}}</text>
+      </view>
+    </view>
+    <secKill />
+    <view class="title-box">
+      <text class="title">东家小院</text>
+    </view>
+    <view class="djxy">
+      <view class="top-item">
+        <view class="title">科普好书</view>
+        <view class="sub-title">精选优秀科普好书</view>
+        <view class="imgs">
+          <view class="img-box">
+            <image class="img" src="//m.360buyimg.com/mobilecms/s150x150_jfs/t21961/244/1929604241/197378/cbd04418/5b3ec567N0bbcf59a.jpg!q70.jpg.dpg" mode="widthFix"></image>
+          </view>
+          <view class="img-box">
+            <image class="img" src="//m.360buyimg.com/mobilecms/s150x150_jfs/t1/127892/36/12329/265103/5f59f31bEe73272d7/1b3ab9a6d0857350.jpg!q70.jpg.dpg" mode="widthFix"></image>
+          </view>
+        </view>
+      </view>
+      <view class="top-item">
+        <view class="title">学霸进阶</view>
+        <view class="sub-title">今日事今日毕</view>
+        <view class="imgs">
+          <view class="img-box">
+            <image class="img" src="//m.360buyimg.com/mobilecms/s150x150_jfs/t14947/16/2261118720/198321/56fd59d3/5a8e56e6N0a8a78ed.jpg!q70.jpg.dpg" mode="widthFix"></image>
+          </view>
+          <view class="img-box">
+            <image class="img" src="//m.360buyimg.com/mobilecms/s150x150_jfs/t22207/246/2624291305/386621/db38736f/5b5ed295Ncdd627ec.jpg!q70.jpg.dpg" mode="widthFix"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" wx:for="{{djxy}}" wx:key='index'>
+        <view class="title">{{item.title}}</view>
+        <view class="sub-title">{{item.subTitle}}</view>
+        <image src="{{item.img}}" mode="widthFix" class="img"></image>
+      </view>
+    </view>
+    <view class="title-box">
+      <text class="title1">每日逛</text>
+    </view>
+    <view class="every-day">
+      <view class="item" wx:for="{{everyDay}}" wx:key='index'>
+        <view class="title {{item.titleColor}}">
+          {{item.title}}
+        </view>
+        <view class="sub-title">{{item.subTitle}}</view>
+        <image src="{{item.img}}" mode="widthFix" class="img"></image>
+      </view>
+    </view>
+    <recommand />
+</view>

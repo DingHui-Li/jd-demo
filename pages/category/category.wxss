@@ -1,0 +1,58 @@
+/* pages/class/class.wxss */
+#class{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+#class .top{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 10px;
+}
+#class .top .back{
+  padding: 0 15px;
+}
+#class .top .search-bar{
+  flex: 1;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  margin-right: 50px;
+}
+#class .top .search-bar .input{
+  flex: 1;
+  margin-left: 10px;
+}
+
+#class .vtabs{
+  flex: 1;
+  overflow: auto;
+}
+#class .vtabs .title{
+  position: relative;
+  font-weight: bold;
+  padding: 0 5px;
+}
+#class .vtabs .items{
+  overflow: hidden;
+}
+#class .vtabs .items .item{
+  width: 33%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+}
+#class .vtabs .items .item .img{
+  width: 100%;
+}
+#class .vtabs .items .item .txt{
+  font-size: 0.8rem;
+}

@@ -1,0 +1,30 @@
+<!--pages/class/class.wxml-->
+<view id="class">
+  <view class="top">
+    <view class="back">
+      <mp-icon icon='back' size='{{10}}' type='field'></mp-icon>
+    </view>
+    <view class="search-bar">
+      <view>
+        <mp-icon icon='search' size='{{25}}' type='field' color='grey'></mp-icon>
+      </view>
+      <input type="text" class="input"/>
+    </view>
+  </view>
+  <mp-vtabs vtabs='{{vtabs}}'
+    activeTab="{{activeTab}}" 
+    bindtabclick="onTabCLick"
+    bindchange="onChange" class="vtabs">
+      <mp-vtabs-content tabIndex="{{index}}" wx:for="{{vtabs}}" wx:key="title">
+          <view wx:for="{{item.data}}" class="vtabs-content-item">
+            <view class="title">{{item.title}}</view>
+           <view class="items">
+              <view class="item" wx:for="{{item.data}}">
+                <image src='{{item.img}}' class="img" mode='widthFix'></image>
+                <view class="txt">{{item.title}}</view>
+              </view>
+           </view>
+          </view>
+      </mp-vtabs-content>
+  </mp-vtabs>
+</view>

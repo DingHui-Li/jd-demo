@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "topbar":"./topbar/topbar",
+    "home":"./views/homePage/home"
+  },
+  "navigationBarBackgroundColor": "#D32F2F",
+  "navigationBarTextStyle": "white"
+}

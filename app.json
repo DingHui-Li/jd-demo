@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/category/category",
+    "pages/cart/cart"
+  ],
+  "usingComponents": {
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon"
+  },
+  "tabBar": {
+    "custom": true,
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home"
+      },
+      {
+        "pagePath": "pages/category/category"
+      },
+      {
+        "pagePath": "pages/cart/cart"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}
